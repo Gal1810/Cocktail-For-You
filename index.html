@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>הקוקטייל האישי שלך!</title>
+    <meta name="description" content="קוקטייל בהרכבה אישית" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="גל מנשרוב, קורן הדר, עידו טל, טל אלעל" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+<body>
+    <h2>הרכיבו את המשקה שלכם! ניתן לבחור בסיס אלכוהולי אחד למשקה, ולהוסיף הערות להזמנה. <br />תתפרעו עם הפירות זה בחינם!</h2>
+    <div id="container">
+        <div id="alcoholRadio">
+            <fieldset>
+                <legend>בחרו בסיס אלכוהול למשקה שלכם</legend>
+                <input type="radio" id="rad1" name="alcohol" data-image="vodka" /> וודקה<br />
+                <input type="radio" id="rad2" name="alcohol" data-image="whisky" /> וויסקי<br />
+                <input type="radio" id="rad3" name="alcohol" data-image="redWine" /> יין אדום<br />
+                <input type="radio" id="rad4" name="alcohol" data-image="whiteWine" /> יין לבן<br />
+            </fieldset>
+        </div>
+        <div id="fruitCheckBox">
+            <fieldset>
+                <legend>בחרו פרי בסיס למשקה שלכם</legend>
+                <input type="checkbox" id="che1" data-image="redGrapefruit" /> אשכולית אדומה<br />
+                <input type="checkbox" id="che2" data-image="orange" /> תפוז<br />
+                <input type="checkbox" id="che3" data-image="lemon" /> לימון <br />
+                <input type="checkbox" id="che4" data-image="kiwi" /> קיווי<br />
+            </fieldset>
+        </div>
+        <div id="extraNotes">
+            <fieldset>
+                <legend>הערות להזמנה?</legend>
+                <textarea id="textarea1" class="textarea1" placeholder="רשמו כאן את ההערות להזמנה שלכם"></textarea>
+            </fieldset>
+        </div>
+        <div id="alcoholPic">
+            <img src="./images/redWine.png" class="redWine" />
+            <img src="./images/whiteWine.png" class="whiteWine" />
+            <img src="./images/whisky.png" class="whisky" />
+            <img src="./images/vodka.png" class="vodka" />
+            <img src="./images/kiwi.png" class="kiwi" />
+            <img src="./images/lemon.png" class="lemon" />
+            <img src="./images/orange.png" class="orange" />
+            <img src="./images/redGrapefruit.png" class="redGrapefruit" />
+        </div>
+        <img src="./images/glass.png" class="glass" />
+        <input type="button" id="submitButton" value="שלחו הזמנה" onclick="send()" />
+    </div>
+</body>
+</html>
